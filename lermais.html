@@ -1,0 +1,29 @@
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nulla a dolor aperiam quaerat qui aut similique iste? Soluta beatae quis velit magnam suscipit quam maiores! Ipsam laudantium sit voluptates.
+</p>
+
+<p style="
+    text-align: right; 
+    opacity: 50%;
+    font-size: small;
+">
+  <a onclick="javascript:ShowHide('HiddenDiv')"><em>continuar lendo...</em></a>
+</p>
+
+<div id="HiddenDiv" style="display: none">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis totam iusto similique eaque sapiente aliquid, cum odit fugiat at? Totam ducimus quo impedit sequi voluptatem debitis tempora magni voluptas laboriosam?
+  </p>
+</div>
+
+<p>
+  <script type="text/javascript">
+    function ShowHide(divId) {
+      if (document.getElementById(divId).style.display == "none") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+  </script>
+</p>
