@@ -10,7 +10,7 @@ Basicamente é reexibido uma DIV com JavaScript, que fora renderizada ocultada, 
 <br>
 
 <p align="center">
-  <img alt="calendario da copa" src="https://raw.githubusercontent.com/aylmerbolzan/Short-Tips/master/assets/lermais.gif" width="100%">
+  <img alt="calendario da copa" src="https://raw.githubusercontent.com/aylmerbolzan/Short-Tips/master/assets/lermais.gif">
 </p>
 
 ## 🚀 Tecnologias
