@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<style>
+  .whatsapp-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  .whatsapp-menu {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    z-index: 9999;
+  }
+  .whatsapp-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #000; /* Cor do texto preto */
+    text-decoration: none;
+    border-bottom: 1px solid #EEE;
+  }
+  .whatsapp-menu a:last-child {
+    border-bottom: none;
+  }
+</style>
+
+<div class="whatsapp-button">
+  <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</div>
+
+<div class="whatsapp-menu">
+  <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5527999999999" target="_blank">Chamar no Whatsapp</a>
+  <a href="https://chat.whatsapp.com/?????????" target="_blank">Grupo de Ofertas</a>
+</div>
+
+<script>
+  document.querySelector('.whatsapp-button').addEventListener('click', function() {
+    var menu = document.querySelector('.whatsapp-menu');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'block';
+    } else {
+      menu.style.display = 'none';
+    }
+  });
+
+  // Fechar o menu ao clicar fora dele
+  document.addEventListener('click', function(event) {
+    var isClickInside = document.querySelector('.whatsapp-button').contains(event.target) || document.querySelector('.whatsapp-menu').contains(event.target);
+    if (!isClickInside) {
+      document.querySelector('.whatsapp-menu').style.display = 'none';
+    }
+  });
+</script>
